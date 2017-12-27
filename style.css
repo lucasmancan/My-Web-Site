@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+.navbar-transparente{
+   background-color: black;
+   
+}
+html, .capa{
+ height: 100%;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body {
+   
+    font-size: 16px;
+    height: 100%;
+    font-family: Helvetica,arial,sans-serif;
+    transition: all 0.5s;
+   
+}
+.nav-item{
+    color: white;
+}
+.navbar-transparente a{
+    color: white;
+    margin-right: 20px;
+}
+.capa{
+    display: table;
+    width: 100%;
+  
+}
+.descrição-perfil{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+#nome-perfil{
+    font-size: 1em;
+    font-weight: bold;
+   
+}
+#perfil{
+    border-radius: 100%;
+    width: 300px;
+}
+@media(max-width: 768px){
+    #perfil{
+        width: 150px;
+    }
+    .descrição-perfil{
+        font-size:20px;
+    }
+}
+.texto-capa{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Lobster', cursive;
+  
+}
+footer{
+    font-family: 'Lobster', cursive;
+    color: gray;
+    padding: 10px;
+}
+nav{
+    font-family: 'Lobster', cursive;
+}
+nav a:hover {
+color: #2d83ce;
+}
+nav:hover{
+    background-color: black;
+}
+
+.navbar-brand{
+    font-size: 20px;
+}
+
+
+body{
+    background: linear-gradient(50deg,#02255c, #218de6,#0de4e4);
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer{
+    background-color: white;
+    text-align: center;
+  
+}
+.container-fluid{
+    background-color: white;
+    margin-top: 10px;
+}
+/*menu redes sociais*/
+.rede#facebook{
+    background-color: #2372a3;
+   
+   }
+   .rede#twitter{
+    background-color: #0084b4;
+   }
+   .rede#instagram{
+    background-color: #3f729b;
+   }
+   
+   .rede#snap{
+    background-color: #fc0;
+   }
+   .rede#plus{
+    background-color: #dd4b39;
+   }
+   .rede#youtube{
+    background-color: #8B0000;
+   }
+   
+   .icone{
+    margin: 0px auto;
+   padding: 30px;
+    width: 800px;
+   }
+
+   @media(max-width:1280px){
+ 
+    
+   }
+   section{
+    margin: 50px auto;
+    width: 1025px;
+    height: 150px;
+ 
+    
+   }
+   
+   .rede{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+   }
+   
+   .rede:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 4px 30px 16px 0px rgba(50,50,50, 0.45);
+   }
+/*menu redes sociais*/
