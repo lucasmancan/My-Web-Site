@@ -16,6 +16,7 @@ body {
     height: 100%;
     font-family: Helvetica,arial,sans-serif;
     transition: all 0.5s;
+    font-family: 'Lobster', cursive;
    
 }
 .nav-item{
@@ -33,6 +34,7 @@ body {
 .descrição-perfil{
     margin-top: 15px;
     padding: 10px;
+    
 }
 
 #nome-perfil{
@@ -46,11 +48,15 @@ body {
 }
 @media(max-width: 768px){
     #perfil{
-        width: 150px;
+        width: 175px;
     }
     .descrição-perfil{
-        font-size:20px;
+        font-size:25px;
     }
+}
+.btn-principal{
+    background-color: white;
+    color: none;
 }
 .texto-capa{
     text-align: center;
@@ -76,7 +82,7 @@ nav:hover{
 }
 
 .navbar-brand{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -88,12 +94,9 @@ body{
 footer{
     background-color: white;
     text-align: center;
-  
+    border-top: 1px solid rgba(0,0,0,.5);
 }
-.container-fluid{
-    background-color: white;
-    margin-top: 10px;
-}
+
 /*menu redes sociais*/
 .rede#facebook{
     background-color: #2372a3;
@@ -103,7 +106,7 @@ footer{
     background-color: #0084b4;
    }
    .rede#instagram{
-    background-color: #3f729b;
+    background: linear-gradient( rgb(209, 61, 165),  #fc0, rgb(122, 12, 95)  );
    }
    
    .rede#snap{
@@ -112,40 +115,62 @@ footer{
    .rede#plus{
     background-color: #dd4b39;
    }
-   .rede#youtube{
-    background-color: #8B0000;
+   .rede#GitHub{
+    background-color: black;
    }
    
-   .icone{
-    margin: 0px auto;
-   padding: 30px;
-    width: 800px;
-   }
-
-   @media(max-width:1280px){
- 
-    
-   }
-   section{
-    margin: 50px auto;
-    width: 1025px;
-    height: 150px;
- 
-    
-   }
-   
-   .rede{
+ #menu-icones{
+     display: inline-block;
+   margin: 50px;
+ }  
+.rede{
     width: 100px;
     height: 100px;
-    float: left;
-    margin-left: 20px;
-    transition: all 0.4s ease-out;
-    border-radius: 50%;
-   }
+    border-radius: 100%;
+    display: inline-block;
+}
+@media(max-width:768px){
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .rede{
+        width: 100%;
+        height: 100%;
+        border-radius:0%;
+    }
+    .icone{
+        width: 75px;
+    }
+}
+.icone{
+    padding: 20px;
+}
    
    .rede:hover{
     cursor: pointer;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
+    background: black;
     box-shadow: 4px 30px 16px 0px rgba(50,50,50, 0.45);
    }
+.conteudo-site{
+   margin: 20px;
+   padding: 10px;
+   background: #fff;
+   box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
 /*menu redes sociais*/
+#carreira{
+    
+    padding: 20px;
+    text-align: center;
+}
+.caixa{
+    background-color: rgba(3, 1, 5, 0.383);
+    color: white;
+}
+.row{
+    text-align: center;
+}
+.col-md-7{
+    text-align: center;
+}
