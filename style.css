@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
+@import url('https://fonts.googleapis.com/css?family=Allura');
+@import url('https://fonts.googleapis.com/css?family=Rancho');
+@import url('https://fonts.googleapis.com/css?family=Rancho|Vidaloka');
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background: url('imgs/background.png'),linear-gradient(50deg,#e6261f, #2f70d8);
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+#background{
+
+    filter: blur(5px);
+    background-size: cover;
+    background-attachment: fixed;
+}
+img, video{
+    max-width: 100%;
+    max-height: 100%;
+}
+.capa{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.texto-capa{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+}
+.caixa{
+    background-color: rgba(255, 255, 255, .2);
+    margin: 0 auto;
+    
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+#FotoPerfil{
+    margin: 5px;
+   border-radius: 60%;
+   
+}
+/*navbar*/
+.navbar-pessoal{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.navbar-pessoal li a{
+    color: #fff;
+    font-weight: bold;
+    margin: 0 20px;
+    font-family: 'Rancho', cursive;
+    font-size: 20px;
+}
+.navbar-brand{
+    color: white;
+}
+footer{
+    text-align: center;
+    color: #f3f3f3;
+    font-family: 'Rancho', cursive;
+}
