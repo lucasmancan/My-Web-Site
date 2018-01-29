@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Grand+Hotel');
-@import url('https://fonts.googleapis.com/css?family=Allura');
-@import url('https://fonts.googleapis.com/css?family=Rancho');
-@import url('https://fonts.googleapis.com/css?family=Rancho|Vidaloka');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 html, body{
     width: 100%;
     height: 100%;
@@ -10,10 +7,11 @@ html, body{
    
 }
 body{
-    background: url('imgs/background.png'),linear-gradient(50deg,#e6261f, #2f70d8);
+    background: url('imgs/background.png'),linear-gradient(50deg,#1045d8, #588fe7);
     
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Lobster', cursive;
 }
 #background{
 
@@ -35,15 +33,11 @@ img, video{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    font-family: 'Rancho', cursive;
+    font-family: 'Lobster', cursive;
+    color: #fff;
 }
 .caixa{
-    background-color: rgba(255, 255, 255, .2);
-    margin: 0 auto;
-    
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
-    border-radius: 10px;
+   padding: 50px;
 }
 #FotoPerfil{
     margin: 5px;
@@ -52,14 +46,16 @@ img, video{
 }
 /*navbar*/
 .navbar-pessoal{
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 1);
+
 }
 
 .navbar-pessoal li a{
     color: #fff;
     font-weight: bold;
     margin: 0 20px;
-    font-family: 'Rancho', cursive;
+    font-family: 'Lobster', cursive;
+    color: #fff;
     font-size: 20px;
 }
 .navbar-brand{
@@ -68,5 +64,67 @@ img, video{
 footer{
     text-align: center;
     color: #f3f3f3;
-    font-family: 'Rancho', cursive;
+    font-family: 'Lobster', cursive;
+    padding: 15px;
+}
+/*icones redes sociais*/
+#menu-icones{
+
+}
+.icone{
+ width: 30px;
+}
+.rede:hover{
+    transition: all .5s;
+    background-color: rgba(255,255, 255, .3);
+    border-radius: 5px;
+}
+@media(max-width:992px){
+   /* .rede{
+        display: none;
+    }*/
+    #FotoPerfil{
+       width: 70%;
+    }
+
+    .texto-capa h1, h2{
+        font-size: 20px;
+    }
+}
+
+.img-container{
+    text-align: center;
+}
+
+#sobre{
+    background-color:#1b2f4f;
+ 
+    color: white;
+}
+#formacao{
+    background-color: #fff;
+    text-align: center;
+}
+#trabalhos{
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+h1{
+    padding: 10px;
+}
+.img-conhecimento{
+ width: 100px;
+}
+.conhecimentos {
+   display: inline-block;
+   text-align: center;
+  width: 100%; 
+   padding: 20px;
+}
+.conhecimentos li{
+    display: inline-block;
+}
+.title{
+    text-align: center;
 }
