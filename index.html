@@ -10,7 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-timeline.css">
+   
 
 
 
@@ -23,198 +26,165 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
 
-    <script language="javascript" src="scripts.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+     
+      
+        
+      
+      
+    
 </head>
 
 <body>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-pessoal navbar-dark ">
-        <div class="container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="color:#fff;"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre Mim
+    <div id="particles-js"></div>
 
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#formacao">Formação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#trabalhos">Trabalhos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav ">
-                    <li class="nav-item rede" id="facebook">
-                        <a class="nav-link " href="https://www.facebook.com/lucas.fredericomancan" target="_blank">
-                            <img class="icone" src="imgs/facebook.png" />
-                        </a>
-                    </li>
-
-                    <li class="nav-item rede" id="instagram">
-                        <a class="nav-link " href=" https://www.instagram.com/lucas_mancan/" target="_blank">
-                            <img class="icone" src="imgs/instagram.png" />
-                        </a>
-
-                    </li>
-
-                    <li class="nav-item  rede" id="plus">
-                        <a class="nav-link " href="https://plus.google.com/u/0/106303020932309894458" target="_blank">
-                            <img class="icone" src="imgs/Google-plus.png" />
-                        </a>
-                    </li>
-                    <li class="nav-item rede" id="GitHub">
-                        <a class="nav-link" href="https://github.com/lucasmancan" target="_blank">
-                            <img class="icone" src="imgs/GitHub.png" />
-                        </a>
-
-                    </li>
-                </ul>
-                <div>
-
-
-
-
-                </div>
-    </nav>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
 
     <section class="capa">
+        <div class="texto-capa ">
+            <div class=" caixa">
 
-        <div class="texto-capa">
-            <div class="container caixa">
-                <img class="img-fluid" width="400px" id="FotoPerfil" src="imgs/FotoPerfil.jpg" alt="Lucas Frederico Mançan" />
                 <!-- <h1 id="nome-perfil">Lucas Frederico Mançan</h1>-->
-                <h1>Lucas Frederico Mançan</h1>
-                <h2 class="descrição-perfil">Analista, Desenvolvedor e Designer.</h2>
+                <h1><span id = "typed" class="element"></span></h1>
+               
+
+                <a id="btn-principal" href="#sobre">Saiba Mais!</a>
             </div>
         </div>
 
 
     </section>
-
+    </div>
     <section id="sobre">
-        <div class="container caixa">
+        <div class="container">
 
             <div class="row">
 
                 <div class="col-md-8">
-                    <h1>Sobre Mim</h1>
+                    <h1 id="sobrep">Sobre Mim</h1>
                     <p>Tenho 19 anos, sou de Vargem Grande Paulista, uma cidade da região metropolitana de São Paulo. Sempre
                         fui ligado a tecnologia e mesmo durante a escola já me aventurava no ramo de desenvolvimento.
 
                     </p>
 
-                    <p>Sou desenvolvedor fullstack e busco uma oportunidade de iniciar carreira em desenvolvimento de software.</p>
+                   
 
 
                 </div>
                 <div class="col-md-4 img-container">
-                    <img src="imgs/Desenho.png">
+                    <img id ="desenho" src="imgs/Desenho.png">
                 </div>
             </div>
         </div>
     </section>
+  
+    <section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block anime">
+			<div class="cd-timeline-img cd-picture">
+				<img src="imgs/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
 
-    <section id="formacao">
-        <div class="container caixa">
-                <h1>
-                        Formação
-                    </h1> 
-            <div class="row">
+			<div class="cd-timeline-content">
+                <h2>Ensino médio</h2>
+                <img src="img/logoObjetivo.png"
+				<p>Colégio Objetivo Vargem Grande Paulista</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Dezembro 2015</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
 
-                   
-                <p>Sou estudante do quinto semestre do curso superior em Sistemas de Informação nas faculdade Integradas Rio
-                    Branco. Minha principal área de interesse é desenvolvimento Web, sou apaixonado por tecnologias Open
-                    Source, mas também atuo na plataforma Microsoft</p>
+		<div class="cd-timeline-block anime-rigth">
+			<div class="cd-timeline-img cd-movie">
+				<img src="imgs/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block anime">
+			<div class="cd-timeline-img cd-picture">
+				<img src="imgs/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 24</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block anime-rigth">
+			<div class="cd-timeline-img cd-location">
+				<img src="imgs/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block anime">
+			<div class="cd-timeline-img cd-location">
+				<img src="imgs/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 5</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block anime-rigth">
+			<div class="cd-timeline-img cd-movie">
+				<img src="imgs/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Final Section</h2>
+				<p>This is the content of the last section</p>
+				<span class="cd-date">Feb 26</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
 
 
-
-
-                <ul class="conhecimentos justify-content-center">
-                    <li class="">
-                        <img class="img-conhecimento" src="imgs/conhecimentos/csharp.png" alt="ASP.NET">
-                    </li>
-
-                    <li class="">
-                        <img class=" img-conhecimento" src="imgs/conhecimentos/java.png" alt="Java">
-                    </li>
-                    <li class="">
-                        <img class=" img-conhecimento" src="imgs/conhecimentos/html.png" alt="html">
-                    </li>
-                    <li class="">
-                        <img class="img-conhecimento" src="imgs/conhecimentos/css.png" alt="Css">
-                    </li>
-                    <li class="">
-                        <img class=" img-conhecimento" src="imgs/conhecimentos/js.png" alt="JavaScript">
-                    </li>
-
-                    <li class="">
-                        <img class=" img-conhecimento" src="imgs/conhecimentos/Bootstrap.png" alt="Bootstrap">
-                    </li>
-                    <li class="">
-                        <img class="  img-conhecimento" src="imgs/conhecimentos/jquery.png" alt="ASP.NET">
-                    </li>
-                </ul>
-
-
-            </div>
-        </div>
-    </section>
-
-
-    <section id="trabalhos">
-        <div class="container  caixa">
-
-            <div class="row">
-
-                <div class="col-md-4">
-                    <img src="imgs/GitHub.png"/>
-                </div>
-                <div class="col-md-8">
-                        <h1>Trabalhos</h1>
-                        <p>Desenvolvi e participo do desenvolvimento de diversos sites e softwares open Source, disponivel no Git Hub</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contato">
-        <div class="container  caixa">
-            <div class="row title">
-                <h1>Contato</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6">
-
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </section>
+  
 
 
 
     <footer>
-
+        
         <p>2017 &copy; Lucas Frederico Mançan</p>
     </footer>
 
-
-
-
-</body>
+    
+  
+    <script src="js/typed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script language="javascript" src="js/scripts.js"></script>
+  
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'eiFDuJVevl';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 
 </html>
