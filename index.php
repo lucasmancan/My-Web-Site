@@ -41,6 +41,7 @@
 						<img class="icone" src="imgs/linkedin.png" alt="Linkedin">
 					</a>
 				</div>
+				<a>ss</a>
 				<a class="btn btn-principal" href="#sobre">Saiba Mais!</a>
 			</div>
 		</div>
